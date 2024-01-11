@@ -75,8 +75,24 @@
 
 - npm install bootstrap
 - npm install font-awesome angular-font-awesome
+- npm install jquery
+- npm install popper
+- npm install alertifyjs
 - npm i
-- style.css Git
+
+## Style CSS
+
+```sh
+- style.css ==>
+
+/* You can add global styles to this file, and also import other style files */
+
+/* Bootstrap Ekle */
+@import "bootstrap/dist/css/bootstrap.min.css";
+
+/* Font awesome */
+@import "font-awesome/css/font-awesome.min.css";
+```
 
 ## Angular Hakkında
 
@@ -228,6 +244,10 @@ npm install -g nodemon --save
 npm run nodemon
 npm run nodemon_q
 ```
+
+---
+
+---
 
 ---
 
