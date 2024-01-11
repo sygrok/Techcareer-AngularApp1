@@ -4,6 +4,7 @@ import { RouterOutlet } from '@angular/router';
 import { OnepageHeaderComponent } from './onepage-header/onepage-header.component';
 import { OnepageFooterComponent } from './onepage-footer/onepage-footer.component';
 import { OnepageMainComponent } from './onepage-main/onepage-main.component';
+import { OnepageProjectNameComponent } from './onepage-project-name/onepage-project-name.component';
 
 @Component({
   selector: 'app-root',
@@ -16,6 +17,7 @@ import { OnepageMainComponent } from './onepage-main/onepage-main.component';
     OnepageHeaderComponent,
     OnepageFooterComponent,
     OnepageMainComponent,
+    OnepageProjectNameComponent,
   ],
 })
 export class AppComponent {
