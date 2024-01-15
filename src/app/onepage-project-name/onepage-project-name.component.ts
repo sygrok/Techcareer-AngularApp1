@@ -9,10 +9,15 @@ import { ChangeDetectionStrategy, Component } from '@angular/core';
   // templateUrl: './onepage-header.component.html',
   template: `
     <div>
-      <!-- one way data binding -->
-      Project Name: <span class="text-primary">Single Page app</span>
-      <br />
-      Merhabalar <span class="text-primary">Berkay - Anduv</span>
+      <ul class="list-group list-group-numbered">
+        <li class="list-group-item active">{{ projectName }}</li>
+        <li class="list-group-item">{{ name }} - {{ surname }}</li>
+        <li class="list-group-item">{{ projectAuthor }}</li>
+        <li class="list-group-item">{{ projectVersion }}</li>
+        <li class="list-group-item">{{ projectYear }}</li>
+        <li class="list-group-item">{{ projectKeywords }}</li>
+        <li class="list-group-item disabled">Disabled item</li>
+      </ul>
     </div>
     <hr />
   `,

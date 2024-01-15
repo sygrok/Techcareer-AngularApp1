@@ -5,6 +5,7 @@ import { OnepageHeaderComponent } from './onepage-header/onepage-header.componen
 import { OnepageFooterComponent } from './onepage-footer/onepage-footer.component';
 import { OnepageMainComponent } from './onepage-main/onepage-main.component';
 import { OnepageProjectNameComponent } from './onepage-project-name/onepage-project-name.component';
+import { NgFor } from '@angular/common';
 
 @Component({
   selector: 'app-root',

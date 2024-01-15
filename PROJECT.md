@@ -1,10 +1,11 @@
 ## Angular CLI Hazır Bileşenler
-> ng g component      onepage-header
-> ng g component      onepage-main
-> ng g component      onepage-footer
 
+> ng g component onepage-header
+> ng g component onepage-main
+> ng g component onepage-footer
 
 ## AppComponent (Component Eklemek)
+
 ```sh
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
@@ -20,10 +21,10 @@ import { OnepageFooterComponent } from './onepage-footer/onepage-footer.componen
   selector: 'app-root',
   standalone: true,
   imports: [
-    CommonModule, 
-    RouterOutlet, 
-    OnepageHeaderComponent, 
-    OnepageMainComponent, 
+    CommonModule,
+    RouterOutlet,
+    OnepageHeaderComponent,
+    OnepageMainComponent,
     OnepageFooterComponent
   ],
   templateUrl: './app.component.html',
@@ -35,5 +36,21 @@ export class AppComponent {
 ```
 
 ## Header Component
+
+ng generate component one-page-header (Class: OnepageHeaderComponent)
+
 ## Main Component
+
+ng generate component one-page-main (Class: OnepageMainComponent)
+
 ## Footer Component
+
+ng g component one-page-footer (Class: OnepageFooterComponent)
+
+## nfIf
+
+- Karar mekanizması
+
+## ngFor
+
+-- Döngü mekanizması
