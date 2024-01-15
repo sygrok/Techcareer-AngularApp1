@@ -5,8 +5,8 @@ import { Component } from '@angular/core';
   standalone: true,
   imports: [],
   templateUrl: './onepage-footer.component.html',
-  styleUrl: './onepage-footer.component.css'
+  styleUrl: './onepage-footer.component.css',
 })
 export class OnepageFooterComponent {
-
+  year: number = new Date().getFullYear();
 }
