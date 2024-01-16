@@ -28,7 +28,4 @@ export class BlogCard {
     this.date = date;
     this.link = link;
   }
-
-  // method
-  // Date : Gün/Ay/Yıl dönderen method yazınız ve bunu date bind ediniz.
 }

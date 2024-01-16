@@ -1,24 +1,50 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
-import { User } from './user';
+import { User, userRolles } from './User';
 
 @Component({
   selector: 'app-onepage-navbar',
   standalone: true,
   imports: [CommonModule],
   templateUrl: './onepage-navbar.component.html',
-  styleUrl: './onepage-navbar.component.css',
+  styleUrls: ['./onepage-navbar.component.css'],
 })
 export class OnepageNavbarComponent {
-  user: User[] = [
+  homePage: String = 'Anasayfa 44';
+
+  User: User[] = [
     {
       id: 1,
-      username: 'Berkay',
+      username: 'Berkay Anduv',
+      email: 'berkayanduv@gmail.com',
       password: '123456',
-      email: 'berkay@gmail.com',
-      pictures: 'none',
-      date: '2014-16-01',
-      link: 'none',
+      pictures:
+        'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
+      date: String(new Date().getFullYear()),
+      link: 'https://admin1/',
+      rolles: userRolles.admin,
+    },
+    {
+      id: 2,
+      username: 'writer1',
+      email: 'writer1@gmail.com',
+      password: '123456',
+      pictures:
+        'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
+      date: String(new Date().getFullYear()),
+      link: 'https://writer1/',
+      rolles: userRolles.writer,
+    },
+    {
+      id: 3,
+      username: 'user1',
+      email: 'huser1@gmail.com',
+      password: '123456',
+      pictures:
+        'https://cdn.pixabay.com/photo/2014/12/27/15/40/office-581131_1280.jpg',
+      date: String(new Date().getFullYear()),
+      link: 'https://user1/',
+      rolles: userRolles.user,
     },
   ];
 
@@ -39,7 +65,7 @@ export class OnepageNavbarComponent {
       style: string;
     };
   } = {
-    isLogin: false,
+    isLogin: true,
     logo: {
       logoName: 'Logo',
       logoFontAwesome: 'fa-solid fa-code-branch',
@@ -51,16 +77,16 @@ export class OnepageNavbarComponent {
     navbar: [
       {
         id: 1,
-        name: 'Anasayfa',
+        name: 'anasayfa',
         link: '/',
         fontAwesome: 'fa-solid fa-house-chimney',
       },
-      { id: 2, name: 'AboutMe', link: '/about-me', fontAwesome: 'font-2' },
-      { id: 3, name: 'Blog', link: '/blog', fontAwesome: 'font-3' },
-      { id: 4, name: 'Contact', link: '/contact', fontAwesome: 'font-4' },
+      { id: 2, name: 'about', link: '/about-me', fontAwesome: 'font-2' },
+      { id: 3, name: 'blog', link: '/blog', fontAwesome: 'font-3' },
+      { id: 4, name: 'contact', link: '/contact', fontAwesome: 'font-4' },
     ],
     search: {
-      name: 'Search',
+      name: 'search',
       placeholder: 'Arama için ...',
       type: 'text',
       style: 'btn btn-primary',

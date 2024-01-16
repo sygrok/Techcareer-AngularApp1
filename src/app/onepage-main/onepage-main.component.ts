@@ -1,20 +1,27 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { BlogCard } from './BlogCard';
+import { OnePageContent } from './OnePageContent';
 
 @Component({
   selector: 'app-onepage-main',
   standalone: true,
   imports: [CommonModule],
-
   templateUrl: './onepage-main.component.html',
   styleUrl: './onepage-main.component.css',
 })
 export class OnepageMainComponent {
+  onePageContent: OnePageContent[] = [
+    { id: 1, title: 'my work' },
+    { id: 2, title: 'about' },
+    { id: 3, title: 'blog' },
+    { id: 4, title: 'contact' },
+  ];
+
   blogCard: BlogCard[] = [
     {
       id: 1,
-      title: 'lorem1',
+      title: 'Title-1',
       text: 'Text-1',
       description: 'Description-1',
       picture:
@@ -24,7 +31,7 @@ export class OnepageMainComponent {
     },
     {
       id: 2,
-      title: 'lorem2',
+      title: 'Title-2',
       text: 'Text-2',
       description: 'Description-2',
       picture:
@@ -34,7 +41,7 @@ export class OnepageMainComponent {
     },
     {
       id: 3,
-      title: 'lorem3',
+      title: 'Title-3',
       text: 'Text-3',
       description: 'Description-3',
       picture:
@@ -44,7 +51,7 @@ export class OnepageMainComponent {
     },
     {
       id: 4,
-      title: 'lorem4',
+      title: 'Title-4',
       text: 'Text-4',
       description: 'Description-4',
       picture:
@@ -54,7 +61,7 @@ export class OnepageMainComponent {
     },
     {
       id: 5,
-      title: 'lorem5',
+      title: 'Title-5',
       text: 'Text-5',
       description: 'Description-5',
       picture:
@@ -64,7 +71,7 @@ export class OnepageMainComponent {
     },
     {
       id: 6,
-      title: 'lorem6',
+      title: 'Title-6',
       text: 'Text-6',
       description: 'Description-6',
       picture:
