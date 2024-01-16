@@ -6,6 +6,8 @@ import { OnepageFooterComponent } from './onepage-footer/onepage-footer.componen
 import { OnepageMainComponent } from './onepage-main/onepage-main.component';
 import { OnepageProjectNameComponent } from './onepage-project-name/onepage-project-name.component';
 import { NgFor } from '@angular/common';
+import { OnepageNavbarComponent } from './onepage-navbar/onepage-navbar.component';
+import { BrowserModule } from '@angular/platform-browser';
 
 @Component({
   selector: 'app-root',
@@ -19,6 +21,7 @@ import { NgFor } from '@angular/common';
     OnepageFooterComponent,
     OnepageMainComponent,
     OnepageProjectNameComponent,
+    OnepageNavbarComponent,
   ],
 })
 export class AppComponent {
