@@ -10,9 +10,35 @@ import { User } from './user';
   styleUrl: './onepage-navbar.component.css',
 })
 export class OnepageNavbarComponent {
-  username: string = 'Berkay';
+  user: User[] = [
+    {
+      id: 1,
+      username: 'Berkay',
+      password: '123456',
+      email: 'berkay@gmail.com',
+      pictures: 'none',
+      date: '2014-16-01',
+      link: 'none',
+    },
+  ];
 
-  navBar: User = {
+  navBar: {
+    isLogin: boolean;
+    logo: {
+      logoName: string;
+      logoFontAwesome: string;
+      logoPicture: string;
+      logoLink: string;
+      logoTitle: string;
+    };
+    navbar: Array<any>;
+    search: {
+      name: string;
+      placeholder: string;
+      type: string;
+      style: string;
+    };
+  } = {
     isLogin: false,
     logo: {
       logoName: 'Logo',
