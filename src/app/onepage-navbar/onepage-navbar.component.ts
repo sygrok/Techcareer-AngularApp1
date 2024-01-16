@@ -1,5 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
+import { User } from './user';
 
 @Component({
   selector: 'app-onepage-navbar',
@@ -11,24 +12,8 @@ import { Component } from '@angular/core';
 export class OnepageNavbarComponent {
   username: string = 'Berkay';
 
-  navBar: {
-    isLogin: boolean;
-    logo: {
-      logoName: string;
-      logoFontAwesome: string;
-      logoPicture: string;
-      logoLink: string;
-      logoTitle: string;
-    };
-    navbar: Array<any>;
-    search: {
-      name: string;
-      placeholder: string;
-      type: string;
-      style: string;
-    };
-  } = {
-    isLogin: true,
+  navBar: User = {
+    isLogin: false,
     logo: {
       logoName: 'Logo',
       logoFontAwesome: 'fa-solid fa-code-branch',
