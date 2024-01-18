@@ -1,17 +1,17 @@
 import { CommonModule } from '@angular/common';
 import { Component } from '@angular/core';
 import { User, userRolles } from './User';
+import { RouterLink } from '@angular/router';
 
 @Component({
   selector: 'app-onepage-navbar',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, RouterLink],
   templateUrl: './onepage-navbar.component.html',
   styleUrls: ['./onepage-navbar.component.css'],
 })
 export class OnepageNavbarComponent {
-  homePage: String = 'Anasayfa 44';
-
+  // User Object
   User: User[] = [
     {
       id: 1,
@@ -48,8 +48,11 @@ export class OnepageNavbarComponent {
     },
   ];
 
+  // navBar adında bir obje oluşturunuz.
+  // navBar:{}={};
   navBar: {
     isLogin: boolean;
+    // logo: string, (fontAwesome,picture,link,title)
     logo: {
       logoName: string;
       logoFontAwesome: string;
@@ -65,7 +68,7 @@ export class OnepageNavbarComponent {
       style: string;
     };
   } = {
-    isLogin: true,
+    isLogin: false,
     logo: {
       logoName: 'Logo',
       logoFontAwesome: 'fa-solid fa-code-branch',
@@ -74,6 +77,7 @@ export class OnepageNavbarComponent {
       logoLink: '/',
       logoTitle: 'Title',
     },
+    //Anasayfa,AboutMe,Blog,Contact  name: Anasayfa, link: http://, fontAwesome
     navbar: [
       {
         id: 1,
@@ -91,5 +95,10 @@ export class OnepageNavbarComponent {
       type: 'text',
       style: 'btn btn-primary',
     },
-  };
+  }; // end navBar Object
+
+  // Constructor
+  constructor() {}
+
+  // Method
 }
