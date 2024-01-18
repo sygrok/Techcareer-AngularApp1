@@ -59,7 +59,7 @@
         <!-- Business end -->
 
         <!-- About start -->
-        <section id="about_me_id">
+        <section id="about_id">
             <h2 class="text-center display-4  mb-4 mb-4">
                 {{ onePageContent[1].title | uppercase }}
             </h2>
@@ -132,6 +132,10 @@
                             </a>
                         </div>
 
+                        <!-- Hidden -->
+                        <!-- 
+          [hidden]=false ise çalışır.
+        -->
                         <div [hidden]="!(blogCard.length >= 6)">
                             6 tane üründen fazla var.
                         </div>

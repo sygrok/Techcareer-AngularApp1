@@ -85,9 +85,10 @@ export class OnepageNavbarComponent {
         link: '/',
         fontAwesome: 'fa-solid fa-house-chimney',
       },
-      { id: 2, name: 'about', link: '/about-me', fontAwesome: 'font-2' },
-      { id: 3, name: 'blog', link: '/blog', fontAwesome: 'font-3' },
-      { id: 4, name: 'contact', link: '/contact', fontAwesome: 'font-4' },
+      { id: 2, name: 'my work', link: '#business_id', fontAwesome: 'font-2' },
+      { id: 3, name: 'about', link: '#about_id', fontAwesome: 'font-2' },
+      { id: 4, name: 'blog', link: '#blog_id', fontAwesome: 'font-3' },
+      { id: 5, name: 'contact', link: '#contact_id', fontAwesome: 'font-4' },
     ],
     search: {
       name: 'search',
